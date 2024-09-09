@@ -1,4 +1,4 @@
-Lunar Sim Demo
+LunarSim Demo
 ==============
 
 Space ROS Lunar Sim Demo Docker Image
@@ -40,8 +40,21 @@ Then run:
 
   ./run.sh
 
-
 Depending on the host computer, you might need to remove the ``--gpus all`` flag in ``run.sh``, which uses your GPUs.
+
+
+Running the Demo
+^^^^^^^^^^^^^^^^
+
+Once the container is running, you can launch the demo by running:
+
+.. code-block:: bash
+
+  souce install/setup.bash
+  ros2 launch lunar_sim_gz_worlds lunar_sim.launch
+
+This will launch the gazebo lunar world, spawn the rover and start teleop in a new terminal window which enables you to control the rover as per the instructions in the terminal window.
+
 
 Changing the Digital Elevation Model (DEM)
 ------------------------------------------
