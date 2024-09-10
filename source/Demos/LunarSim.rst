@@ -20,7 +20,7 @@ Then build lunar_sim demo images:
 
 .. code-block:: bash
 
-  cd ../lunar_sim
+  cd lunarsim_demo
   ./build.sh
 
 
